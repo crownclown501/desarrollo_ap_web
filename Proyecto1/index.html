@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Merriweather:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenido-navegacion">
+            <nav class="navegacion ocultar">
+                <a href="#me">Sobre mí</a>
+                <a href="#projects">Mis Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </div>
+        <div class="contenido-encabezado contenedor" id="inicio">
+            <h1>Mi Portafolio</h1>
+        </div>
+    </header>
+<br><br><br><br>
+    <section class="about-me" id="me">
+        <div class="contenido-informacion-info contenedor">
+            <div class="info">
+                <h2>Sobre Mí</h2>
+                <p>Hola, soy Luis, un desarrollador web apasionado por crear soluciones innovadoras. Me encanta aprender nuevas tecnologías y mejorar mis habilidades en el desarrollo web.</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+    <section class="projects contenedor" id="projects">
+        <h2>Mis Proyectos</h2>
+        <article class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempora dicta, maiores, animi quis, quas quae aliquam odit alias unde maxime reprehenderit natus deleniti enim tenetur perspiciatis aspernatur consequatur minus.</p>
+            <a href="https://github.com/crownclown501?tab=repositories" class="btn borde">Saber más</a>
+        </article>
+
+        <article class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi quaerat distinctio consequuntur ducimus necessitatibus quibusdam voluptate atque numquam vitae eius totam at eum, modi, vel illo excepturi tempore alias!</p>
+            <a href="https://github.com/crownclown501?tab=repositories" class="btn borde">Saber más</a>
+        </article>
+    </section>
+<br><br><br><br><br>
+    <section class="contacto" id="contact">
+        <h2>Contacto</h2>
+        <div class="contenido-contacto">
+            <form class="formulario-contacto" action="url_que_usaremos_servidor" method="POST">
+                <div class="input-contacto">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Luis Gomez">
+                </div>
+                <div class="input-contacto">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required placeholder="example@example.com">
+                </div>
+                <div class="input-contacto">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="+52 2223244518">
+                </div>
+                <div class="input-contacto">
+                    <label for="mensaje">Comentario:</label>
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input-contacto">
+                    <input type="submit" value="Enviar" class="btn azul">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+
+</html>
