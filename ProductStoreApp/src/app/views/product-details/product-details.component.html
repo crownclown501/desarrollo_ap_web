@@ -1,0 +1,19 @@
+<p>product-details works!</p>
+
+<div class="container mt-4">
+    <mat-card class="p-3">
+        <h3>Detalles del Producto</h3>
+        <p><strong>ID:</strong>{{producto.id}}</p>
+        <p><strong>Nombre:</strong>{{producto.nombre}}</p>
+        <p><strong>Descripcion:</strong>{{producto.descripcion}}</p>
+        <p><strong>Precio:</strong>{{producto.precio}}</p>
+        <div class="mt-3">
+            <button mat-raised-button color="primary" (click)="agregarAlCarrito()">
+                Agregar al carrito
+            </button>
+            <button mat-raised-button color="accent" routerLink="/products" class="ms-2">
+                Volver a productos
+            </button>
+        </div>
+    </mat-card>
+</div>

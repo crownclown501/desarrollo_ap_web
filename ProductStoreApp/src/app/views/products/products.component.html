@@ -1,0 +1,39 @@
+<div class="container mt-4">
+    
+    <div class="mb-4">
+      <button mat-icon-button color="primary" routerLink="/">
+          <mat-icon>home</mat-icon>
+          
+      </button>
+      <h2 class="text-center mb-4">Lista de Productos</h2>
+  </div>
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let producto of productos">
+              <td>{{ producto.id }}</td>
+              <td>{{ producto.nombre }}</td>
+              <td>{{ producto.precio }}</td>
+              <td>
+                <button mat-icon-button color="accent" [routerLink]="['/product', producto.id]" matTooltip="Ver detalle">
+                  <mat-icon>visibility</mat-icon>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+    </table>
+    
+    <div class="mt-4 text-center">
+      <button mat-raised-button color="primary" routerLink="/cart">
+          ir a carrito
+      </button>
+
+</div>
