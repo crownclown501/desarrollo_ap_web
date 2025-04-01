@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-product-details',
   standalone: false,
   templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.css']
+  styleUrl: './product-details.component.css'
 })
 export class ProductDetailsComponent {
   productos = [

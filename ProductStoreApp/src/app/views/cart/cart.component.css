@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    flex: 0 0 33.33%; /* Tres columnas */
+    max-width: 33.33%;
+    padding: 20px; /* Espaciado entre columnas */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.card {
+    width: 80%; /* Ancho completo del contenedor */
+    height: 300px; /* Altura fija para que todas las tarjetas tengan el mismo tamaño */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.img-producto {
+    width: 80%; /* Ancho completo del contenedor */
+    height: 80%; /* Alto completo del contenedor */
+    object-fit: fill; /* Mantiene la proporción y recorta si es necesario */
+}
